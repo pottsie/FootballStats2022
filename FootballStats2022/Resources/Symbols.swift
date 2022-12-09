@@ -11,5 +11,6 @@ import SwiftUI
 enum Symbols {
     
     static let profile = Image(systemName: "person")
+    static let share = Image(systemName: "square.and.arrow.up")
     
 }
