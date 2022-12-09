@@ -8,27 +8,37 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var renderedImage: Image?
+    
     var body: some View {
         
         NavigationStack {
             VStack {
                 
                 profile
+                    .onAppear {
+                        let renderer = ImageRenderer(content: profile)
+                        renderer.scale = 3
+                        if let image = renderer.cgImage {
+                            renderedImage = Image(decorative: image, scale: 1.0)
+                        }
+                    }
                 
                 Spacer()
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        //
-                    } label: {
-                        Symbols.share
+                    if let renderedImage {
+//                        ShareLink(item: renderedImage, preview: SharePreview("Profile"))
+                        ShareLink(item: renderedImage,
+                                  message: Text("Profile for Noah Potts"),
+                                  preview: SharePreview("Profile", image: renderedImage))
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        //
+                        // Code for editing the profile
                     } label: {
                         Text("Edit")
                     }
