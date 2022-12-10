@@ -21,6 +21,9 @@
 		2760DBA42942CA080089A0D9 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760DBA32942CA080089A0D9 /* Symbols.swift */; };
 		2760DBAA2942D1AC0089A0D9 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760DBA92942D1AC0089A0D9 /* ProfileImageView.swift */; };
 		2760DBAC2942D34A0089A0D9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2760DBAB2942D34A0089A0D9 /* ProfileView.swift */; };
+		27D536002943F8B1004CEBAB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D535FF2943F8B1004CEBAB /* CoreDataManager.swift */; };
+		27D536022944C3CB004CEBAB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D536012944C3CB004CEBAB /* ImagePicker.swift */; };
+		27D536042944D9D7004CEBAB /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D536032944D9D7004CEBAB /* ModalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		2760DBA32942CA080089A0D9 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		2760DBA92942D1AC0089A0D9 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		2760DBAB2942D34A0089A0D9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		27D535FF2943F8B1004CEBAB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		27D536012944C3CB004CEBAB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		27D536032944D9D7004CEBAB /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2760DB9D2942C9150089A0D9 /* FootballStatsModel.xcdatamodeld */,
+				27D535FF2943F8B1004CEBAB /* CoreDataManager.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 			children = (
 				2760DBA32942CA080089A0D9 /* Symbols.swift */,
 				271596DE2943559A009402D2 /* Theme.swift */,
+				27D536032944D9D7004CEBAB /* ModalType.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 		2760DBA82942CB1E0089A0D9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				27D536012944C3CB004CEBAB /* ImagePicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -263,13 +272,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D536042944D9D7004CEBAB /* ModalType.swift in Sources */,
 				2760DB9F2942C9150089A0D9 /* FootballStatsModel.xcdatamodeld in Sources */,
 				271596ED2943BC57009402D2 /* CustomNumberFieldView.swift in Sources */,
 				2760DBA42942CA080089A0D9 /* Symbols.swift in Sources */,
+				27D536022944C3CB004CEBAB /* ImagePicker.swift in Sources */,
 				271596EB2943B431009402D2 /* CustomTextFieldView.swift in Sources */,
 				271596E2294355FA009402D2 /* PlayerEntity+Extensions.swift in Sources */,
 				271596E72943577F009402D2 /* ProfileViewModel.swift in Sources */,
 				271596E92943A620009402D2 /* ProfileFormViewModel.swift in Sources */,
+				27D536002943F8B1004CEBAB /* CoreDataManager.swift in Sources */,
 				2760DBAA2942D1AC0089A0D9 /* ProfileImageView.swift in Sources */,
 				271596DD2943550B009402D2 /* ProfileForm.swift in Sources */,
 				2760DBAC2942D34A0089A0D9 /* ProfileView.swift in Sources */,

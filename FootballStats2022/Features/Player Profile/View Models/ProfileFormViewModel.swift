@@ -19,6 +19,7 @@ class ProfileFormViewModel: ObservableObject {
     @Published var newJerseyNumber: String
     @Published var newHeight: Int
     @Published var newDateOfBirth: Date
+    @Published var isUpdating: Bool = false
     
     init() {
         newFirstName = ""
@@ -44,6 +45,8 @@ class ProfileFormViewModel: ObservableObject {
         newJerseyNumber = currentProfile.jerseyNumber
         newDateOfBirth = currentProfile.dateOfBirth
         newHeight = currentProfile.height
+        
+        isUpdating = true
     }
     
 }

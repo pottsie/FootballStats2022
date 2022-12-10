@@ -50,15 +50,30 @@ struct ProfileView: View {
     var profile: some View {
         Group {
             ProfileImageView()
+                .overlay {
+                    Button {
+                        // Add code for selecting a new profile image
+                        print("Change image")
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.black)
+                            .shadow(color: .white, radius: 15, x: 0, y: 0)
+                    }
+                    .offset(x: 93, y: 93)
+                }
             
             VStack(spacing: 5) {
                 Text("Michael Potts")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
-                Text("Central Defender")
+                Text("#6")
                     .font(.title)
-                Text("September 20, 1966")
+
+                Text("Central Defensive Midfielder")
+                    .font(.title2)
                 Text("165 cm")
+                Text("September 20, 1966")
                 Text("South County Athletic Association")
                 Text("South County High School")
                 Text("Lorton, VA")

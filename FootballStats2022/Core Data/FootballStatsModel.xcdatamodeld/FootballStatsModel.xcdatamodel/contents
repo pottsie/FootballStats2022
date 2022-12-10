@@ -5,7 +5,7 @@
         <attribute name="club_" optional="YES" attributeType="String"/>
         <attribute name="dateOfBirth_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="firstName_" optional="YES" attributeType="String"/>
-        <attribute name="height_" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="height_" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="highSchool_" optional="YES" attributeType="String"/>
         <attribute name="jerseyNumber_" optional="YES" attributeType="String"/>
         <attribute name="lastName_" optional="YES" attributeType="String"/>

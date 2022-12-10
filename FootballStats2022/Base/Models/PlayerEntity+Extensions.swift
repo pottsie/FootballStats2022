@@ -47,7 +47,7 @@ extension PlayerEntity {
             Int(height_)
         }
         set {
-            height_ = Int16(newValue)
+            height_ = Int32(newValue)
         }
     }
     
