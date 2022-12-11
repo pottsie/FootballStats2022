@@ -24,6 +24,7 @@
 		27D536002943F8B1004CEBAB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D535FF2943F8B1004CEBAB /* CoreDataManager.swift */; };
 		27D536022944C3CB004CEBAB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D536012944C3CB004CEBAB /* ImagePicker.swift */; };
 		27D536042944D9D7004CEBAB /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D536032944D9D7004CEBAB /* ModalType.swift */; };
+		27D53608294635FF004CEBAB /* PlayerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D53607294635FF004CEBAB /* PlayerListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		27D535FF2943F8B1004CEBAB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		27D536012944C3CB004CEBAB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		27D536032944D9D7004CEBAB /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		27D53607294635FF004CEBAB /* PlayerListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		2760DBA12942C9C50089A0D9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				27D53605294635DB004CEBAB /* Player List */,
 				271596E52943574D009402D2 /* Game List */,
 				2760DBA52942CAEA0089A0D9 /* Player Profile */,
 			);
@@ -200,6 +203,30 @@
 				27D536012944C3CB004CEBAB /* ImagePicker.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		27D53605294635DB004CEBAB /* Player List */ = {
+			isa = PBXGroup;
+			children = (
+				27D5360929463607004CEBAB /* View Models */,
+				27D53606294635EB004CEBAB /* Views */,
+			);
+			path = "Player List";
+			sourceTree = "<group>";
+		};
+		27D53606294635EB004CEBAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27D53607294635FF004CEBAB /* PlayerListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27D5360929463607004CEBAB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +305,7 @@
 				2760DBA42942CA080089A0D9 /* Symbols.swift in Sources */,
 				27D536022944C3CB004CEBAB /* ImagePicker.swift in Sources */,
 				271596EB2943B431009402D2 /* CustomTextFieldView.swift in Sources */,
+				27D53608294635FF004CEBAB /* PlayerListItemView.swift in Sources */,
 				271596E2294355FA009402D2 /* PlayerEntity+Extensions.swift in Sources */,
 				271596E72943577F009402D2 /* ProfileViewModel.swift in Sources */,
 				271596E92943A620009402D2 /* ProfileFormViewModel.swift in Sources */,

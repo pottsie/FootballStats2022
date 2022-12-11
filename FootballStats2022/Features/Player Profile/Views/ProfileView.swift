@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @StateObject private var profileVM = ProfileViewModel()
     @State private var renderedImage: Image?
+    
+    @State var modalType: PlayerModalType?
     
     var body: some View {
         
@@ -26,19 +29,20 @@ struct ProfileView: View {
                 
                 Spacer()
             }
+            .sheet(item: $modalType, content: { $0 })
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     if let renderedImage {
-//                        ShareLink(item: renderedImage, preview: SharePreview("Profile"))
                         ShareLink(item: renderedImage,
-                                  message: Text("Profile for Noah Potts"),
-                                  preview: SharePreview("Profile", image: renderedImage))
+                                  message: Text("Profile for \(profileVM.player.fullName)"),
+                                  preview: SharePreview("Profile for \(profileVM.player.fullName)", image: renderedImage))
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         // Code for editing the profile
+                        modalType = .update(profileVM.player)
                     } label: {
                         Text("Edit")
                     }
@@ -64,19 +68,19 @@ struct ProfileView: View {
                 }
             
             VStack(spacing: 5) {
-                Text("Michael Potts")
+                Text(profileVM.player.fullName)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
-                Text("#6")
+                Text(profileVM.player.jerseyNumber)
                     .font(.title)
 
-                Text("Central Defensive Midfielder")
+                Text(profileVM.player.position)
                     .font(.title2)
-                Text("165 cm")
+                Text("\(profileVM.player.height) cm")
                 Text("September 20, 1966")
-                Text("South County Athletic Association")
-                Text("South County High School")
-                Text("Lorton, VA")
+                Text(profileVM.player.club)
+                Text(profileVM.player.highSchool)
+                Text("\(profileVM.player.city), \(profileVM.player.state)")
             }
             .font(.system(size: 18, weight: .regular, design: .rounded))
             .padding(.top)
