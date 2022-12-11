@@ -9,12 +9,27 @@ import SwiftUI
 
 struct PlayerListItemView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            ProfileImageView(imageSize: 75, stroke: .primary, shadow: .primary)
+            
+            VStack(alignment: .leading) {
+                
+                Text("Noah Potts")
+                    .font(.title2)
+                Text("Central Defensive Midfielder")
+                
+            }
+            .padding(.leading, 5)
+            
+            Spacer()
+        }
     }
 }
 
 struct PlayerListItemView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerListItemView()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
