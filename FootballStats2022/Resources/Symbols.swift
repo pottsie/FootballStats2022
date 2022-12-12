@@ -12,5 +12,6 @@ enum Symbols {
     
     static let profile = Image(systemName: "person")
     static let share = Image(systemName: "square.and.arrow.up")
+    static let settings = Image(systemName: "gear")
     
 }

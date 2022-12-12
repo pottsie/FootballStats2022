@@ -11,13 +11,7 @@ import SwiftUI
 struct FootballStats2022App: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ProfileView()
-                    .tabItem {
-                        Symbols.profile
-                        Text("profile")
-                    }
-            }
+            PlayerListView()
         }
     }
 }

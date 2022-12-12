@@ -10,7 +10,7 @@ import SwiftUI
 struct PlayerListItemView: View {
     var body: some View {
         HStack {
-            ProfileImageView(imageSize: 75, stroke: .primary, shadow: .primary)
+            ProfileImageView(imageSize: 65, stroke: .primary, shadow: .primary)
             
             VStack(alignment: .leading) {
                 

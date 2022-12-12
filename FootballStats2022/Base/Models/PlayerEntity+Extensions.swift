@@ -59,4 +59,5 @@ extension PlayerEntity {
     var fullName: String {
         firstName + " " + lastName
     }
+    
 }
